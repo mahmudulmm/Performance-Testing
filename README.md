@@ -93,7 +93,7 @@ jmeter -g result.jtl -o newreport\test_report.html
 
    * Use `.jtl` file or HTML report to analyze performance metrics.
 
-### Performance-testing-jmeter
+## Performance-testing-jmeter
 - ├── tests/
 - │ ├── load_test.jmx # Load testing plan
 - │ └── stress_test.jmx # Stress testing plan
@@ -101,3 +101,36 @@ jmeter -g result.jtl -o newreport\test_report.html
 - │ └── result.jtl # Test result file
 - │ └── report/ # HTML report
 
+## How to Use BlazeMeter to Record a JMeter Test
+**Step 1:**
+-  Create and Log in to BlazeMeter
+Visit https://www.blazemeter.com
+- Click Sign Up (or Log In if you already have an account)
+- Complete registration with email or GitHub/Google
+
+**Step 2:**
+- Add the BlazeMeter Chrome Extension
+- Go to the Chrome Web Store
+- Search for “BlazeMeter - The Continuous Testing Platform”
+- Click Add to Chrome → Add Extension
+- After installation, log in using your BlazeMeter account
+
+**Step 3:**
+- Record Your Test
+- Click the BlazeMeter icon in the browser toolbar
+- Click Start Recording
+- Visit the website you want to test
+- Perform actions: click links, fill forms, navigate menus, etc.
+
+**Step 4:**
+-  Save the JMX File
+- Click Stop in the BlazeMeter extension
+- Click Download JMX
+- This downloads a .jmx file compatible with Apache JMeter
+
+**Step 5:**
+- Run the JMX File in JMeter
+- Open Apache JMeter
+- Go to File → Open and select your downloaded .jmx file
+- Add listeners 
+- Click Start to run the test

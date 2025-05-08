@@ -75,7 +75,7 @@ jmeter -g result.jtl -o newreport\test_report.html
 
 * `-n` : Non-GUI mode
 * `-t` : Test plan file (.jmx)
-* `-l` : Log results to a file (e.g., `results.jtl`)
+* `-l` : Log results to a file (`results.jtl`)
 * `-e` : Generate report dashboard
 * `-o` : Output folder for HTML report
 
@@ -120,7 +120,7 @@ Visit https://www.blazemeter.com
 - Click the BlazeMeter icon in the browser toolbar
 - Click Start Recording
 - Visit the website you want to test
-- Perform actions: click links, fill forms, navigate menus, etc.
+- Perform actions: click links, fill forms, navigate menus.
 
 **Step 4:**
 -  Save the JMX File
@@ -134,3 +134,41 @@ Visit https://www.blazemeter.com
 - Go to File → Open and select your downloaded .jmx file
 - Add listeners 
 - Click Start to run the test
+
+
+## How to Use BlazeMeter to Record a JMeter Test
+
+### Step 1: Create and Log in to BlazeMeter
+
+1. Visit [https://www.blazemeter.com](https://www.blazemeter.com)
+2. Click **Sign Up**
+3. Complete registration with email 
+
+### Step 2: Add the BlazeMeter Chrome Extension
+
+1. Go to the **Chrome Web Store**
+2. Search for **“BlazeMeter - The Continuous Testing Platform”**
+3. Click **Add to Chrome** → **Add Extension**
+4. After installation, log in using your BlazeMeter account
+
+
+### Step 3: Record Your Test
+
+1. Click the BlazeMeter icon in the browser toolbar
+2. Click **Start Recording**
+3. Visit the website you want to test
+4. Perform actions: click links, fill forms, navigate menus.
+
+### Step 4: Save the JMX File
+
+1. Click **Stop** in the BlazeMeter extension
+2. Click **Download JMX**
+3. This downloads a `.jmx` file compatible with Apache JMeter
+
+### Step 5: Run the JMX File in JMeter
+
+1. Open **Apache JMeter**
+2. Go to **File → Open** and select your downloaded `.jmx` file
+3. Add **listeners** 
+4. Click **Start** to run the test
+
